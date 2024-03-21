@@ -1,0 +1,126 @@
+@charset "ISO-8859-1";
+@charset "ISO-8859-1";
+/* Fontes */
+@import url('https://fonts.googleapis.com/css2?family=Krona+One&family=Montserrat:wght@400;600&display=swap');
+
+* {
+  margin: 0;
+  box-sizing: border-box;
+  font-family: var(--fonte-Montserrat);
+}
+
+
+/* Cores */
+:root {
+    --cor-primaria: #000000; /* Preto, background #000000 */
+    --cor-secundaria:#F8F7F3; /* Branco #F6F6F6 */
+    --cor-terciaria:#22D4FD; /* Azul-claro principal #22D4FD */
+    --cor-hover:#272727; /* Cor do Hover #272727 */
+}
+	
+
+.links a:hover {
+  color: var(--cor-hover);
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: var(--cor-terciaria);
+  padding: 30px 100px;
+}
+
+header:hover{
+    /*border: 3px solid var(--cor-terciaria);*/
+    filter: drop-shadow(5px 5px 5px #15AAFF);
+    /*background-color:var(--cor-hover);*/
+}
+
+/* Aqui acaba a estilização do Header */
+
+/*Estilização da SectionUm */
+.title{
+    color: var(--cor-secundaria);
+    /*font-size: 34px;*/
+    font-family:var(--fonte-KronaOne);
+    /*margin-bottom: 40px;*/
+}
+.titulo-destaque{
+    color: var(--cor-terciaria);
+    font-family:var(--fonte-KronaOne);
+}
+
+.titulo-destaque:hover{
+  font-family:var(--fonte-KronaOne);
+  font-size: 19px;
+}
+
+h1{
+    margin-bottom: 30px;	
+	font-size: 22px;
+}
+
+h2 {
+  text-align: center;
+  font-size: 25px;
+  margin-top: 80px;
+  margin-bottom: 30px;
+}
+
+/*Acaba a estilização da sectionUm*/
+
+
+
+/* Estilização básica */
+body {
+    font-family: 'Montserrat', sans-serif;
+    background-color: var(--cor-primaria);
+    color: var(--cor-secundaria);
+}
+
+/* Estilização da área de login */
+.container {
+    width: 400px;
+    margin: 70px auto;
+    padding: 20px;
+    background-color:var(--cor-hover);
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+}
+
+.loginText {
+	color: var(--cor-secundaria);
+    text-align: center;
+    font-size: 24px;
+    margin-bottom: 20px;
+}
+
+.form-group {
+    margin-bottom: 15px;
+}
+
+.form-control {
+	margin-top:3px;
+    width: 100%;
+    padding: 8px 12px;
+    margin-bottom: 15px;
+    border: 1px solid var(--cor-secundaria);
+    border-radius: 4px;
+    font-size: 14px;
+    color: var(--cor-primaria);
+	font-family: 'Montserrat', sans-serif; /* Adicione esta linha */
+}
+
+.btn-primary {
+    width: 100%;
+    padding: 8px 12px;
+    margin-bottom: 10px;
+    background-color: var(--cor-terciaria);
+    border: none;
+    border-radius: 4px;
+    font-size: 16px;
+    color: var(--cor-secundaria);
+    cursor: pointer;
+    transition: background-color 
+}

@@ -1,0 +1,140 @@
+@import url('https://fonts.googleapis.com/css2?family=Krona+One&family=Montserrat:wght@400;600&display=swap');
+* {
+  margin: 0;
+  box-sizing: border-box;
+  font-family: var(--fonte-Montserrat);
+}
+
+:root{
+  --cor-primaria: #000000; /* Preto, background */
+  --cor-secundaria:#F6F6F6; /* Branco */
+  --cor-terciaria:#22D4FD; /* Azul-claro principal */
+  --cor-hover:#272727; /* Cor do Hover */
+
+  --fonte-KronaOne: 'Krona One', sans-serif;
+  --fonte-Montserrat: 'Montserrat', sans-serif;
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: var(--cor-secundaria);
+  font-family: var(--fonte-KronaOne);
+  padding: 30px 100px;
+  /*margin-bottom: 80px; */
+}
+
+/* Estilos para a logomarca */
+.logo {
+  color: var(--cor-primaria);
+  font-size: 24px;
+  font-weight: bold;
+  text-decoration: none;
+}
+
+/* Estilos para a lista de links */
+.links {
+  list-style: none;
+  padding: 0;
+  display: flex;
+}
+
+.links li {
+  margin-right: 20px;
+}
+
+.links a {
+  color:var(--cor-primaria);
+  text-decoration: none;
+  font-weight: bold;
+}
+
+
+/* Estilos para o Footer */
+footer {
+  background-color: #383838;
+  width: 100%;
+  min-height: 250px;
+  margin-top: 100px;
+  color: #fff;
+  padding: 20px 0;
+  text-align: center;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px;
+  background-color: var(--cor-primaria);
+}
+
+.footer-content {
+  display: flex;
+  flex-wrap: wrap; /* Permite que os elementos se quebrem em várias linhas */
+  justify-content: space-around;
+}
+
+.footer-section {
+  flex: 1;
+  padding: 0 20px;
+  margin-bottom: 20px; /* Espaçamento inferior para separar as seções */
+}
+
+.footer-section h3 {
+  font-size: 20px;
+  margin-bottom: 10px;
+}
+
+.footer-section ul {
+  list-style: none;
+  padding: 0;
+}
+
+.footer-section ul li {
+  margin: 10px 0;
+}
+
+.footer-section ul li a {
+  text-decoration: none;
+  color: #fff;
+  font-size: 16px;
+}
+
+.footer-section ul li a:hover {
+  text-decoration: underline;
+}
+
+/* Estilos para dispositivos móveis */
+@media screen and (max-width: 768px) {
+  .footer-content {
+    flex-direction: column; /* Empilha as seções verticalmente */
+    align-items: center; /* Centraliza o conteúdo horizontalmente */
+  }
+
+  .footer-section {
+    margin-bottom: 70px;
+  }
+}
+
+@media (max-width: 768px) {
+  header {
+      flex-direction: column;
+      align-items: flex-start;
+      padding: 30px;
+  }
+
+  .logo {
+    margin-bottom: 50px;
+  }
+
+  .links {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .links li {
+    margin-right: 0;
+    margin-bottom: 20px;
+  }
+}

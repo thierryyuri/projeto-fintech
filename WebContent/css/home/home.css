@@ -1,0 +1,178 @@
+@charset "ISO-8859-1";
+
+/* Estilização básica */
+html,body {
+    font-family: 'Montserrat', sans-serif;
+    color: var(--cor-secundaria);
+    /* Estilização básica de uma imagem de fundo */
+	/*background-image: url('../../images/imagem1.jpg');*/
+  	background-size: cover;
+  	background-repeat: no-repeat;
+	height:100%;
+	margin: 0;
+    padding: 0;
+	background-color: var(--cor-primaria);
+	background-attachment: fixed;
+}
+/* Cores */
+:root {
+    --cor-primaria: #000000; /* Preto, background #000000 */
+    --cor-secundaria:#F8F7F3; /* Branco #F6F6F6 */
+    --cor-terciaria:#22D4FD; /* Azul-claro principal #22D4FD */
+    --cor-hover:#272727; /* Cor do Hover #272727 */
+    --fonte-KronaOne: 'Krona One', sans-serif;
+    --fonte-Montserrat: 'Montserrat', sans-serif;
+}
+body{
+   /* height: 100vh; */
+    box-sizing: border-box;
+    background-color: var(--cor-primaria);
+    color: var(--cor-secundaria);
+}
+
+.cabecalho{
+    padding:2% 0% 0% 15% ;
+}
+
+.cabecalho__menu {
+    display: flex;
+    gap: 80px;
+}
+
+.cabecalho__menu__link {
+    font-family: var(--fonte-Montserrat);
+    font-size: 24px;
+    font-weight: 400;
+    color: var(--cor-terciaria);
+    text-decoration: none;
+}
+
+.cabecalho__menu__link:hover{
+    color: var(--cor-secundaria);
+}
+
+.apresentacao{
+    padding: 5% 15%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.apresentacao__conteudo{
+    width: 615px;
+    display: flex;
+    flex-direction: column;
+    /*gap: 40px; */
+    margin-right: 20px;
+}
+
+.apresentacao__conteudo__titulo{
+    font-size: 34px;
+    font-family:var(--fonte-KronaOne);
+    margin-bottom: 40px;
+}
+
+.apresentacao__conteudo__subtitulo{
+    font-weight: 200;
+    font-size: 24px;
+    font-family:var(--fonte-KronaOne);
+    margin-bottom: 20px;
+}
+
+.titulo-destaque{
+    color: var(--cor-terciaria);
+}
+
+.apresentacao__conteudo__texto{
+    font-size: 20px;
+    font-family: var(--fonte-Montserrat);
+    margin-bottom: 30px;
+}
+
+.apresentacao__conteudo__texto:hover {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 16px;
+    gap: 16px;
+    border: 3px solid var(--cor-terciaria);
+    filter: drop-shadow(5px 5px 4px #22D4FD);
+    border-radius: 8px;
+    background-color:var(--cor-hover);
+}
+
+.apresentacao__conteudo__paragrafo {
+    font-size: 20px;
+    font-family:var(--fonte-Montserrat);
+    margin-bottom: 30px;
+/*  Essa class eu criei para substituir o conteudo__texto,
+    mas dessa vez no arquivo 'about.html', quero tirar o hover. */
+}
+
+.apresentacao__links{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    gap: 32px;
+}
+
+.apresentacao__links__subtitulo{
+    font-family:var(--fonte-KronaOne);
+    font-weight: 400;
+    font-size: 20px;
+}
+
+.apresentacao__links__link{
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    border: 2px solid var(--cor-terciaria);
+    width: 378px;
+    text-align: center;
+    border-radius: 8px;
+    font-size: 24px;
+    font-weight: 600;
+    padding: 21.5px 0;
+    text-decoration: none;
+    color: var(--cor-secundaria);
+    font-family: var(--fonte-Montserrat);
+}
+
+.apresentacao__links__link:hover {
+    background-color: var(--cor-hover);
+}
+
+.apresentacao__links__link__imagem{
+    width: 2vw; /* A imagem terá 2% da largura da tela */
+    height: 2vw;
+}
+
+.apresentacao__conteudo__IMAGENS{
+    padding: 2%;
+    display: flex;
+    align-items: center;
+}
+
+.apresentacao__conteudo__imagens{
+    width: 10vw; /* A imagem terá 5% da largura da tela */
+    height: auto; /* A altura será ajustada automaticamente */
+    transition: transform 0.5s;
+}
+
+.apresentacao__conteudo__imagens:hover{
+    transform: scale(1.1);
+}
+
+.imagem__juliane{
+    transition: transform 0.5s;
+}
+
+.imagem__juliane:hover{
+    transform: scale(1.1);    
+}
+
+img {
+  width: 32vw; /* A imagem terá 32% da largura da tela */
+  height: auto; /* A altura será ajustada automaticamente */
+}

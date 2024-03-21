@@ -1,0 +1,57 @@
+@charset "ISO-8859-1";
+
+/* Fontes */
+@import url('https://fonts.googleapis.com/css2?family=Krona+One&family=Montserrat:wght@400;600&display=swap');
+
+* {
+  margin: 0;
+  box-sizing: border-box;
+  font-family: var(--fonte-Montserrat);
+}
+
+:root{
+  --cor-primaria: #000000; /* Preto, background */
+  --cor-secundaria:#F6F6F6; /* Branco */
+  --cor-terciaria:#22D4FD; /* Azul-claro principal */
+  --cor-hover:#272727; /* Cor do Hover */
+  --cor-ativo:#15AAFF;/* Cor de fundo para o estado ativo */
+
+  --fonte-KronaOne: 'Krona One', sans-serif;
+  --fonte-Montserrat: 'Montserrat', sans-serif;
+}
+
+/* Define o estilo do cabeçalho */
+header {
+  	background-color: var(--cor-terciaria);
+    padding: 20px;
+    text-align: center;
+}
+
+header:hover{
+    filter: drop-shadow(5px 5px 5px #15AAFF);
+
+}
+
+/* Define o estilo dos links do cabeçalho */
+header a {
+    color: var(--cor-primaria);
+    padding: 14px 16px;
+    text-decoration: none;
+    font-family: var(--fonte-Montserrat);
+    font-size: 17px;
+	font-weight: 600;
+}
+
+/* Define o estilo dos links do cabeçalho quando o mouse está sobre eles */
+header a:hover {
+	background-color: var(--cor-hover);
+    color: var(--cor-secundaria);
+    border-radius: 8px; /* Adiciona borda arredondada */
+}
+
+/* Define o estilo do link ativo do cabeçalho */
+header a:active {
+    background-color: var(--cor-ativo); /* Cor de fundo para o estado ativo */
+    color: white;
+    border-radius: 8px; /* Adiciona borda arredondada */
+}

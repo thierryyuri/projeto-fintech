@@ -1,0 +1,172 @@
+@import url('https://fonts.googleapis.com/css2?family=Krona+One&family=Montserrat:wght@400;600&display=swap');
+
+:root{
+    --cor-primaria: #000000; /* Preto, background #000000 */
+    --cor-secundaria:#F8F7F3; /* Branco #F6F6F6 */
+    --cor-terciaria:#22D4FD; /* Azul-claro principal #22D4FD */
+    --cor-hover:#272727; /* Cor do Hover #272727 */
+
+    --fonte-KronaOne: 'Krona One', sans-serif;
+    --fonte-Montserrat: 'Montserrat', sans-serif;
+
+    /* Ideias de cores
+      #F8F7F3 Branco
+      #373636 Preto
+      #15AAFF Azul */
+}
+
+/* Aqui temos a estilização do Header */
+.logo{
+  color:var(--cor-primaria);
+}
+
+.links {
+  list-style: none; /* Remover a estilização padrão da lista (pontos) */
+  padding: 0;
+  margin: 0;
+}
+
+.links li {
+  display: inline-block; /* Colocar os itens da lista em linha */
+  margin-right: 20px; /* Espaçamento entre os itens da lista (ajuste conforme necessário) */
+}
+
+.links a {
+  text-decoration: none; /* Remover sublinhado padrão dos links */
+  color: var(--cor-primaria);
+  font-family: var(--fonte-Montserrat);
+  font-size: 16px;
+}
+
+.links a:hover {
+  color: var(--cor-hover);
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: var(--cor-terciaria);
+  padding: 30px 100px;
+}
+
+header:hover{
+    /*border: 3px solid var(--cor-terciaria);*/
+    filter: drop-shadow(5px 5px 5px #15AAFF);
+    /*background-color:var(--cor-hover);*/
+}
+
+/* Aqui acaba a estilização do Header */
+/* Aqui temos a estilização do Body */
+.corBody{
+  background-color: var(--cor-primaria);
+  height: 100vh;
+}
+
+.container {
+  max-width: 500px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+.title{
+    color: var(--cor-secundaria);
+    /*font-size: 34px;*/
+    font-family:var(--fonte-KronaOne);
+    /*margin-bottom: 40px;*/
+}
+.titulo-destaque{
+    color: var(--cor-terciaria);
+    font-family:var(--fonte-KronaOne);
+}
+
+.titulo-destaque:hover{
+  font-family:var(--fonte-KronaOne);
+  font-size: 19px;
+}
+
+h2 {
+  text-align: center;
+  font-size: 25px;
+  margin-top: 80px;
+  margin-bottom: 30px;
+}
+
+h3{
+  text-align: center;
+  font-size: 18px;
+  margin-bottom: 70px
+}
+
+.apresentacao__links{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    gap: 32px;
+}
+
+.apresentacao__links__link{
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    border: 2px solid var(--cor-terciaria);
+    width: 378px;
+    text-align: inline;
+    border-radius: 8px;
+    font-size: 22px;
+    font-weight: 600;
+    padding: 21.5px 0;
+    text-decoration: none;
+    color: var(--cor-secundaria);
+    font-family: var(--fonte-Montserrat);
+}
+
+.apresentacao__links__link:hover {
+    background-color: var(--cor-hover);
+}
+
+/* Parte de estilo do Formulário
+form {
+  background-color: var(--cor-secundaria);
+  padding: 20px;
+  border-radius: 10px;
+}
+
+.form-field {
+  margin-bottom: 20px;
+}
+
+label {
+  font-weight: bold;
+}
+
+input[type="email"],
+input[type="password"] {
+  width: 100%;
+  padding: 10px;
+  font-size: 16px;
+  border: 1px solid #ccc;
+}
+
+button[type="submit"] {
+  background-color: #333;
+  color: #fff;
+  padding: 10px 20px;
+  font-size: 18px;
+  border: none;
+  cursor: pointer;
+}
+
+.signup-link {
+  text-align: center;
+  margin-top: 20px;
+  color: var(--cor-secundaria);
+}
+
+.signup-linked{
+  text-align: center;
+  margin-top: 20px;
+  color: var(--cor-terciaria); 
+}
+*/

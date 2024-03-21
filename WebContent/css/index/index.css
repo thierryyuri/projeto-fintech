@@ -1,0 +1,178 @@
+@charset "ISO-8859-1";
+
+/* Fontes */
+@import url('https://fonts.googleapis.com/css2?family=Krona+One&family=Montserrat:wght@400;600&display=swap');
+
+/* Cores */
+:root {
+    --cor-primaria: #000000; /* Preto, background #000000 */
+    --cor-secundaria:#F8F7F3; /* Branco #F6F6F6 */
+    --cor-terciaria:#22D4FD; /* Azul-claro principal #22D4FD */
+    --cor-hover:#272727; /* Cor do Hover #272727 */
+}
+
+/* Aqui temos a estilização do Header */
+.logo{
+  color:var(--cor-primaria);
+}
+
+.links {
+  list-style: none; /* Remover a estilização padrão da lista (pontos) */
+  padding: 0;
+  margin: 0;
+}
+
+.links li {
+  display: inline-block; /* Colocar os itens da lista em linha */
+  margin-right: 20px; /* Espaçamento entre os itens da lista (ajuste conforme necessário) */
+}
+
+.links a {
+  text-decoration: none; /* Remover sublinhado padrão dos links */
+  color: var(--cor-primaria);
+  font-family: var(--fonte-Montserrat);
+  font-size: 16px;
+}
+
+.links a:hover {
+  color: var(--cor-hover);
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: var(--cor-terciaria);
+  padding: 30px 100px;
+}
+
+header:hover{
+    /*border: 3px solid var(--cor-terciaria);*/
+    filter: drop-shadow(5px 5px 5px #15AAFF);
+    /*background-color:var(--cor-hover);*/
+}
+
+/* Aqui acaba a estilização do Header */
+
+
+/* Estilização básica */
+html,body {
+    font-family: 'Montserrat', sans-serif;
+    color: var(--cor-secundaria);
+    /* Estilização básica de uma imagem de fundo */
+	background-image: url('../../images/imagem2.jpg');
+  	background-size: cover;
+  	background-repeat: no-repeat;
+	height:100%;
+	margin: 0;
+    padding: 0;
+	background-attachment: fixed;
+}
+
+/*Estilização da SectionUm */
+.title{
+    color: var(--cor-secundaria);
+    /*font-size: 34px;*/
+    font-family:var(--fonte-KronaOne);
+    /*margin-bottom: 40px;*/
+}
+
+h2 {
+  text-align: center;
+  font-size: 25px;
+  margin-top: 80px;
+  margin-bottom: 30px;
+}
+
+/*Estilização da SectionDois */
+.sectionDois{
+	margin-top: 10%;
+}
+
+.apresentacao__links{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    gap: 32px;
+    
+}
+
+.apresentacao__links__link{
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    border: 2px solid var(--cor-terciaria);
+    width: 378px;
+    text-align: inline;
+    border-radius: 8px;
+    font-size: 22px;
+    font-weight: 600;
+    padding: 21.5px 0;
+    text-decoration: none;
+    color: var(--cor-secundaria);
+    font-family: var(--fonte-Montserrat);
+	background-color: var(--cor-primaria);
+}
+
+.apresentacao__links__link:hover {
+    background-color: var(--cor-hover);
+}
+
+/*estilizacao do footer*/
+.titlefooter{
+    color: var(--cor-secundaria);
+    font-size: 16px;
+    font-family:var(--fonte-KronaOne);
+    /*margin-bottom: 40px;*/
+	
+}
+
+/* Estilização básica do footer */
+
+footer {
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: var(--cor-terciaria);
+  padding: 30px 100px;
+  justify-content: flex-end;
+  flex-direction: column; /* Mudança para coluna */
+  }
+
+footer:hover{
+    /*border: 3px solid var(--cor-terciaria);*/
+    filter: drop-shadow(5px 5px 5px #15AAFF);
+    /*background-color:var(--cor-hover);*/
+}
+
+/* Estilos para a lista de links no footer */
+footer .links {
+  list-style: none;
+  padding: 0;
+  display: flex;
+  flex-direction: column; /* Mudança para coluna */
+  text-align: center;
+}
+
+footer .links li {
+  margin-bottom: 10px; /* Espaçamento entre os itens da coluna */
+}
+
+footer .links a {
+  text-decoration: none;
+  color: #fff;
+  font-size: 16px;
+}
+
+footer .links a:hover {
+  text-decoration: underline;
+}
+
+/* Adição de um espaço extra para o link de contato */
+footer .contato-link {
+  margin-top: 20px;
+}
